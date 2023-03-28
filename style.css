@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: hsl(185, 75%, 39%);
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-position: top -600px left -50%, bottom -600px right -50%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 62.5%;
+}
+
+main {
+    width: 300px;
+
+    border-radius: 15px;
+    box-shadow: 3px 3px 10px 5px rgba(46, 51, 71, 0.2);
+    background-color: white;
+}
+
+.image {
+    height: 120px;
+}
+
+.card {
+    width: 300px;
+    border-radius: 15px 15px 0 0;
+}
+
+.profile {
+    position: absolute;
+    top: -54px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    border: 4px solid white;
+}
+
+.victor {
+    border-radius: 50%;
+}
+
+.content {
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.name {
+    margin-top: 70px;
+
+    display: flex;
+    align-items: center;
+}
+
+.name h1 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.name h2 {
+    margin-left: 10px;
+
+    font-size: 1rem;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+.location {
+    margin-top: 10px;
+
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: hsl(227, 10%, 46%);
+}
+
+.stats {
+    margin-top: 20px;
+
+    width: 100%;
+    padding: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    border-top: 1px solid rgba(150, 150, 150, 0.2);
+}
+
+.infos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.infos h2 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: hsl(229, 23%, 23%);
+}
+
+.infos h3 {
+    margin-top: 4px;
+
+    font-size: 0.6rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: hsl(227, 10%, 46%);
+}
+
+
+@media all and (max-width: 450px) {
+    body {
+        background-position: top -500px right -30%, bottom -500px left -30%;
+    }
+}
